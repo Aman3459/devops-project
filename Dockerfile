@@ -1,6 +1,6 @@
 FROM centos:latest
-MAINTAINER amanulla.syed459@gmail.com
-RUN yum install httpd \ zip \ unzip -y
+MAINTAINER Amanulla
+RUN yum install httpd -y
 ADD https://github.com/github/personal-website/archive/refs/heads/master.zip /var/www/html
 WORKDIR /var/www/html
 RUN unzip master.zip
